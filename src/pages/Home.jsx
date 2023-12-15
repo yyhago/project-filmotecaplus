@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import FilmeCard from "../components/FilmeCard";
+import "./FilmeGrid.css"
 
 const filmeURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -21,7 +22,7 @@ const Home = () => {
 
   return (
     <div className="container">
-      <h2 className="title">Os Melhores Filmes:</h2>
+      <h2 className="title">Os Melhores Filmes Para Você:</h2>
       <div className="filmeContainer">
         {topMovies.length === 0 && <p>Buscando...</p>}
         {topMovies.length > 0 && topMovies.map((filme) => <FilmeCard key={filme.id} filme={filme}/>)}
