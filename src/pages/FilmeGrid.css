@@ -1,16 +1,15 @@
-.container .title{
+.container .title {
     color: #fff;
     font-size: 2.5rem;
     text-align: center;
     margin: 2.5rem 0 3rem;
 }
 
-.title .queryText{
+.title .queryText {
     color: #BF0B1A;
 }
 
-
-.filmeContainer{
+.filmeContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -19,8 +18,8 @@
     margin: 0 auto;
 }
 
-.filmeContainer div{
-    width: 30%;
+.filmeContainer div {
+    width: 100%; /* Alterado para ocupar 100% da largura em telas pequenas */
     color: #fff;
     margin-bottom: 2.5rem;
     display: flex;
@@ -30,36 +29,47 @@
     padding: 1rem;
 }
 
-.filmeContainer div img{
+@media (min-width: 768px) {
+    .filmeContainer div {
+        width: 48%; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .filmeContainer div {
+        width: 30%; 
+    }
+}
+
+.filmeContainer div img {
     width: 100%;
 }
 
 .filmeContainer div img,
 .filmeContainer div p,
-.filmeContainer div h2{
+.filmeContainer div h2 {
     margin-bottom: 1rem;
 }
 
-.filmeContainer div svg{
+.filmeContainer div svg {
     color: yellow;
 }
 
-
-.filmeContainer div a{
-    background-color:#BF0B1A;
+.filmeContainer div a {
+    background-color: #BF0B1A;
     border: 2px solid #BF0B1A;
     border-radius: 4px;
     color: #fff;
-    padding: .3rem;
-    font-size:1.3rem;
+    padding: 0.3rem;
+    font-size: 1.3rem;
     justify-content: center;
     text-align: center;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
     font-weight: bold;
 }
 
-.filmeContainer div a:hover{
+.filmeContainer div a:hover {
     background-color: transparent;
     color: #fff;
 }

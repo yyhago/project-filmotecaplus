@@ -1,0 +1,61 @@
+.paginaFilme{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.paginaFilme svg{
+    font-size: 1.5rem;
+    color: #BF0B1A;
+}
+
+.paginaFilme .filmeCard{
+    text-align: center;
+
+}
+
+.paginaFilme .filmeCard p,
+.paginaFilme .filmeCard h2,
+.paginaFilme .filmeCard img{
+    margin-bottom: 1rem;
+}
+
+.paginaFilme .filmeCard h2{
+    font-size: 2rem;
+}
+
+.paginaFilme .filmeCard p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+
+.tagline{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+
+.info{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content:space-around;
+    padding: .5rem;
+}
+
+.info h3{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.description p{
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
