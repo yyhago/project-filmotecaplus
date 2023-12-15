@@ -5,5 +5,3 @@ const Busca = () => {
     <div>Busca</div>
   )
 }
-
-export default Busca

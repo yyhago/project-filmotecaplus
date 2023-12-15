@@ -5,5 +5,3 @@ const Filme = () => {
     <div>Filme</div>
   )
 }
-
-export default Filme
